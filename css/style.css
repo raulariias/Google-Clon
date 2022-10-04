@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
+/* MAIN PAGE */
+
+#main-page{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* MAIN PAGE: Header/Nav Section */
+
+header {
+    width: 100%;
+    height: 4.8rem;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+header nav .navRightSection{
+    list-style: none;
+    width: 23.5rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .navRightSection li {
+    margin: 2.1rem auto 1.2rem auto;
+    color: #000;
+    font-size: 1.3rem;
+}
+header nav .navRightSection li:hover {
+    text-decoration: underline;
+}
+header nav .navRightSection li a:visited{
+    color: #000;
+}
+header nav .navRightSection .menu-icon{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(https://static.thenounproject.com/png/756729-200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+header nav .navRightSection .menu-porfile img {
+    border-radius: 50%;
+    border: 0.4rem solid rgba(255, 255, 255, 0);
+}
+header nav .navRightSection .menu-porfile img:hover {
+    border: 0.4rem solid rgba(100, 100, 100, 0.15);
+}
+
+/* MAIN PAGE: Main section */
+
+main{
+text-align: center;
+}
+main .logo img{
+    margin-top: 15rem;
+    width: 27.2rem;
+}
+main section .InputContainer{
+    width: 58.2rem;
+    height: 4.4rem;
+    border: 1px solid #e0e2e6;
+    margin: 2rem auto 0 auto;
+    border-radius: 2.4rem;
+    position: relative;
+}
+main section .InputContainer:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+main section .InputContainer span{
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1.7rem;
+    top: 1.4rem;
+    opacity: 0.4;
+}
+main section .InputContainer input{
+    width: 82%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+}
+main section .InputContainer img {
+    width: 2.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina de Imagenes */
+#img-page {
+    width: 100vw;
+    height: 100vh;
+}
