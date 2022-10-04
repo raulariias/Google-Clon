@@ -14,7 +14,7 @@ body {
 
 /* MAIN PAGE */
 
-#main-page{
+#main-page, #img-page{
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -22,11 +22,11 @@ body {
 
 /* MAIN PAGE: Header/Nav Section */
 
-header {
+header, .img-page__header {
     width: 100vw;
     height: 4.8rem;
 }
-header nav {
+header nav, .img-page__header nav {
     display: flex;
     justify-content: flex-end;
     height: 100%;
@@ -39,18 +39,18 @@ header nav .navRightSection{
     justify-content: center;
     align-items: center;
 }
-header nav .navRightSection li {
+header nav .navRightSection li, .img-page__header nav .navRightSection li {
     margin: 2.1rem auto 1.2rem auto;
     color: #000;
     font-size: 1.3rem;
 }
-header nav .navRightSection li:hover {
+header nav .navRightSection li:hover, .img-page__header nav .navRightSection li:hover {
     text-decoration: underline;
 }
-header nav .navRightSection li a:visited{
+header nav .navRightSection li a:visited, .img-page__header nav .navRightSection li a:visited{
     color: #000;
 }
-header nav .navRightSection .menu-icon{
+header nav .navRightSection .menu-icon, .img-page__header nav .navRightSection .menu-icon{
     width: 3rem;
     height: 3rem;
     background-image: url(https://static.thenounproject.com/png/756729-200.png);
@@ -59,11 +59,11 @@ header nav .navRightSection .menu-icon{
     background-size: contain;
     cursor: pointer;
 }
-header nav .navRightSection .menu-porfile img {
+header nav .navRightSection .menu-porfile img, .img-page__header nav .navRightSection .menu-porfile img {
     border-radius: 50%;
     border: 0.4rem solid rgba(255, 255, 255, 0);
 }
-header nav .navRightSection .menu-porfile img:hover {
+header nav .navRightSection .menu-porfile img:hover, .img-page__header nav .navRightSection .menu-porfile img:hover {
     border: 0.4rem solid rgba(100, 100, 100, 0.15);
 }
 
@@ -76,7 +76,7 @@ main .logo img{
     margin-top: 15rem;
     width: 27.2rem;
 }
-main section .InputContainer{
+main section .InputContainer, .img-page__main section .InputContainer{
     width: 58.2rem;
     height: 4.4rem;
     border: 1px solid #e0e2e6;
@@ -84,12 +84,12 @@ main section .InputContainer{
     border-radius: 2.4rem;
     position: relative;
 }
-main section .InputContainer:hover{
+main section .InputContainer:hover, .img-page__main section .InputContainer:hover{
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
-main section .InputContainer span{
+main section .InputContainer span, .img-page__main section .InputContainer span{
     background-image: url(https://img.icons8.com/android/24/000000/search.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,7 +100,7 @@ main section .InputContainer span{
     top: 1.4rem;
     opacity: 0.4;
 }
-main section .InputContainer input{
+main section .InputContainer input {
     width: 82%;
     height: 100%;
     border: none;
@@ -138,7 +138,7 @@ main .searchButtons button a:visited{
 }
 /* MAIN PAGE: Footer Section */
 
-footer{
+footer, .img-page__footer {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -147,57 +147,46 @@ footer{
     height: 10rem;
     color: #70757a;
 }
-footer a{
+footer a, .img-page__footer a{
     color: #70757a;
 }
-footer section{
+footer section, .img-page__footer section{
     height: 50%;
     background-color: #f2f2f2;
     border-bottom: 1px solid #dadce0;
     font-size: 1.4rem;
 }
-footer .country p{
+footer .country p, .img-page__footer .country p{
     height: 100%;
     margin: 1.5rem 3rem;
 }
-footer .lastFooter {
+footer .lastFooter, .img-page__footer .lastFooter {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
 }
-footer .lastFooter .leftFooter a{
+footer .lastFooter .leftFooter a, .img-page__footer .lastFooter .leftFooter a{
     margin-left: 3rem;
 }
-footer .lastFooter .leftFooter a:hover{
+footer .lastFooter .leftFooter a:hover, .img-page__footer .lastFooter .leftFooter a:hover{
     text-decoration: underline;
 }
-footer .lastFooter .rightFooter{
+footer .lastFooter .rightFooter, .img-page__footer .lastFooter .rightFooter{
     text-align: end;
 }
-footer .lastFooter .rightFooter a{
+footer .lastFooter .rightFooter a, .img-page__footer .lastFooter .rightFooter a{
     text-align: end;
     margin-right: 3rem;
 }
-footer .lastFooter .rightFooter a:hover{
+footer .lastFooter .rightFooter a:hover, .img-page__footer .lastFooter .rightFooter a:hover{
     text-decoration: underline;
 }
 
 
-/* Pagina de Imagenes */
-#img-page {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-.img-page__header{
-    width: 100vw;
-    height: 4.8rem;
-}
-.img-page__header nav {
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
-}
+/* Estilos diferentes para la pag de imagenes */
+
+/* HEADER SECTION  */
+
 .img-page__header nav .navRightSection{
     list-style: none;
     width: 10.8rem;
@@ -206,30 +195,54 @@ footer .lastFooter .rightFooter a:hover{
     justify-content: center;
     align-items: center;
 }
-.img-page__header nav .navRightSection li {
-    margin: 2.1rem auto 1.2rem auto;
-    color: #000;
-    font-size: 1.3rem;
+
+/* Img Page MAIN SECTION */
+
+.img-page__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.img-page__header nav .navRightSection li:hover {
-    text-decoration: underline;
+.img-page__main .logo {
+    width: 27.2rem;
+    position: relative;
 }
-.img-page__header nav .navRightSection li a:visited{
-    color: #000;
+.img-page__main .logo img{
+    margin-top: 15rem;
+    width: 27.2rem;
 }
-.img-page__header nav .navRightSection .menu-icon{
-    width: 3rem;
-    height: 3rem;
-    background-image: url(https://static.thenounproject.com/png/756729-200.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.img-page__main .logo p{
+    color: #4285f4;
+    position: absolute;
+    bottom: 0.3rem;
+    right: -1.4rem;
+}
+.img-page__main section .InputContainer input {
+    width: 75%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    margin-left: 5rem;
+}
+.img-page__main section .InputContainer .img1{
+    width: 2.5rem;
+    position: absolute;
+    right: 10rem;
+    top: 1rem;
     cursor: pointer;
 }
-.img-page__header nav .navRightSection .menu-porfile img {
-    border-radius: 50%;
-    border: 0.4rem solid rgba(255, 255, 255, 0);
+.img-page__main section .InputContainer .img2{
+    width: 2.5rem;
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
+    cursor: pointer;
 }
-.img-page__header nav .navRightSection .menu-porfile img:hover {
-    border: 0.4rem solid rgba(100, 100, 100, 0.15);
+.img-page__main section .InputContainer .img3{
+    width: 2.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    cursor: pointer;
 }
