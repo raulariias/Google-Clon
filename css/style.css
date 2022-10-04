@@ -23,7 +23,7 @@ body {
 /* MAIN PAGE: Header/Nav Section */
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 4.8rem;
 }
 header nav {
@@ -187,4 +187,49 @@ footer .lastFooter .rightFooter a:hover{
 #img-page {
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+.img-page__header{
+    width: 100vw;
+    height: 4.8rem;
+}
+.img-page__header nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+.img-page__header nav .navRightSection{
+    list-style: none;
+    width: 10.8rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-page__header nav .navRightSection li {
+    margin: 2.1rem auto 1.2rem auto;
+    color: #000;
+    font-size: 1.3rem;
+}
+.img-page__header nav .navRightSection li:hover {
+    text-decoration: underline;
+}
+.img-page__header nav .navRightSection li a:visited{
+    color: #000;
+}
+.img-page__header nav .navRightSection .menu-icon{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(https://static.thenounproject.com/png/756729-200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.img-page__header nav .navRightSection .menu-porfile img {
+    border-radius: 50%;
+    border: 0.4rem solid rgba(255, 255, 255, 0);
+}
+.img-page__header nav .navRightSection .menu-porfile img:hover {
+    border: 0.4rem solid rgba(100, 100, 100, 0.15);
 }
