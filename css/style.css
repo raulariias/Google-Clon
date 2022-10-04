@@ -112,23 +112,75 @@ main section .InputContainer img {
     position: absolute;
     right: 1.5rem;
     top: 1rem;
+    cursor: pointer;
 }
+main .searchButtons{
+    padding-top: 3rem;
+}
+main .searchButtons button{
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    height: 3.6rem;
+    margin-left: 2rem;
+    background-color: #f8f9fa;
+    border: 1px solid #00000000;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+main .searchButtons button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+main .searchButtons button a:visited{
+    color: #3c4043;
+}
+/* MAIN PAGE: Footer Section */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10rem;
+    color: #70757a;
+}
+footer a{
+    color: #70757a;
+}
+footer section{
+    height: 50%;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dadce0;
+    font-size: 1.4rem;
+}
+footer .country p{
+    height: 100%;
+    margin: 1.5rem 3rem;
+}
+footer .lastFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+footer .lastFooter .leftFooter a{
+    margin-left: 3rem;
+}
+footer .lastFooter .leftFooter a:hover{
+    text-decoration: underline;
+}
+footer .lastFooter .rightFooter{
+    text-align: end;
+}
+footer .lastFooter .rightFooter a{
+    text-align: end;
+    margin-right: 3rem;
+}
+footer .lastFooter .rightFooter a:hover{
+    text-decoration: underline;
+}
 
 
 /* Pagina de Imagenes */
